@@ -28,7 +28,7 @@
                          </div>
                          <div class="panel-body">
                              <div class="text-center">
-                                    <div class="userPick">computer pick</div>
+                                    <div id="userPick"></div>
                              </div>
                         </div>
                      </div>
@@ -41,7 +41,7 @@
                             </div>
                             <div class="panel-body">
                                 <div class="text-center">
-                                    <div class="userPick">user pick</div>
+                                    <div id="computerPick"></div>
                                 </div>
                            </div>
                         </div>
@@ -55,12 +55,20 @@
                             <h3 class="panel-title text-center">Using these magic crystals...</h3>
                         </div>
                         <div class="panel-body">
-                            <div class="text-center">
-                                    <button type="button" class="btn btn-default btn1" src="assets/images/blue-crystal.png"></button>
-                                    <button type="button" class="btn btn-default btn2" src="assets/images/grey-crystal.png"></button>
-                                    <button type="button" class="btn btn-default btn3" src="assets/images/green-crystal.png"></button>
-                                    <button type="button" class="btn btn-default btn4" src="assets/images/white-crystal.png"></button>
-                            </div>
+                        
+                                <div class="col-md-1 col-md-offset-1 gem" value="gem1">
+                                    <img src="assets/images/gem1.png" class="img-responsive" alt="Gem1" height="50px" width="50px">
+                                </div>
+                                <div class="col-md-1 col-md-offset-2 gem" value="gem2">
+                                    <img src="assets/images/gem2.png" class="img-responsive" alt="Gem2" height="50px" width="50px">
+                                </div>
+                                <div class="col-md-1 col-md-offset-2 gem" value="gem3">
+                                    <img src="assets/images/gem3.png" class="img-responsive" alt="Gem3" height="50px" width="50px">
+                                </div>
+                                <div class="col-md-1 col-md-offset-2 gem" value="gem4">
+                                    <img src="assets/images/gem4.png" class="img-responsive" alt="Gem4" height="50px" width="50px">
+                                </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -75,12 +83,12 @@
                             <div class="panel-body">
                                 <div class="col-md-6">
                                     <div>
-                                        <div class="userPick"> Wins: </div>
+                                        <div id="wins"> Wins: </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div>
-                                        <div class="userPick"> Losses: </div>
+                                        <div id="losses"> Losses: </div>
                                     </div>
                                 </div>
                         </div>
@@ -88,11 +96,6 @@
                     </div>
                 </div>
         </div>
-
-
-
-
-
 
         <script src="assets/javascript/game.js"></script>
     </body>
